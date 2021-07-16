@@ -1,0 +1,254 @@
+/*General*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("images/bg-header-mobile.png");
+  background-repeat: no-repeat;
+  color: hsl(210, 10%, 33%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 1rem;
+  text-align: center;
+}
+
+div.card-container {
+  margin: 0 1rem;
+  padding-top: 8rem;
+  max-width: 30rem;
+}
+
+/*Text*/
+
+p {
+  color: hsl(201, 11%, 66%);
+  line-height: 1.6rem;
+  margin-bottom: 2.5rem;
+  margin-top: 1rem;
+}
+
+/*Button*/
+
+button {
+  border: none;
+  border-radius: 2rem;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-size: 1.1rem;
+  padding: 0.8rem;
+  width: 100%;
+}
+
+button:first-of-type {
+  background-color: hsl(171, 66%, 44%);
+  margin-bottom: 1.5rem;
+}
+
+button:first-of-type:hover {
+  filter: drop-shadow(0 1rem 1rem hsla(171, 66%, 44%, 0.205));
+}
+
+button:last-of-type {
+  background-color: hsl(233, 100%, 69%);
+}
+
+button:last-of-type:hover {
+  filter: drop-shadow(0 1rem 1rem hsla(233, 100%, 69%, 0.212));
+}
+
+img:first-of-type {
+  margin-bottom: 3rem;
+}
+
+img.photo {
+  object-fit: cover;
+  width: 20rem;
+}
+
+/*First section*/
+
+div.card-container > div {
+  margin-bottom: 10rem;
+}
+
+/*Second section*/
+
+div.card-container > div:nth-child(2) {
+  margin-bottom: 5rem;
+}
+
+/*Fourth section*/
+
+div.card-container > div:nth-child(4) {
+  margin-bottom: 4rem;
+}
+
+div.card-container > div:nth-child(4) > h2 {
+  font-size: 1.6rem;
+}
+
+div.card-container > div:nth-child(4) > p {
+  margin-bottom: 4rem;
+}
+
+/*Fifth section*/
+
+div.card-container > div:nth-child(5) {
+  margin-bottom: 5rem;
+}
+
+/*Seventh section*/
+
+div.card-container > div:nth-child(7) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+
+div.card-container > div:nth-child(7) > img:first-child {
+  margin: 0;
+}
+
+/*Footer*/
+
+div.footer > img {
+  margin-top: 4rem;
+  width: 5rem;
+}
+
+div.footer {
+  background-color: hsla(202, 11%, 66%, 0.082);
+  font-weight: 600;
+  width: 100%;
+}
+
+div.footer > div:first-of-type {
+  cursor: pointer;
+}
+
+div.footer > div:first-of-type :hover {
+  color: hsl(171, 66%, 44%);
+}
+
+div.footer > div:last-of-type {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  padding-bottom: 4rem;
+}
+
+div.footer > div:last-of-type > img {
+  cursor: pointer;
+  margin: 0;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 376px) {
+  body {
+    background-image: url("images/bg-header-desktop.png");
+  }
+}
+
+@media (min-width: 1200px) {
+  div.card-container {
+    max-width: 100%;
+  }
+
+  div.card-container > div:first-child,
+  div.card-container > div:nth-child(2),
+  div.card-container > div:nth-child(4) > p,
+  div.card-container > div:nth-child(5),
+  div.card-container > div:nth-child(8) {
+    max-width: 30rem;
+    margin: auto;
+  }
+
+  div.card-container > div:nth-child(3),
+  div.card-container > div:nth-child(6) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  div.card-container > div:nth-child(3) {
+    text-align: left;
+  }
+
+  div.card-container > div:nth-child(7) {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  div.card-container > div:nth-child(6) > div {
+    width: 33.33%;
+  }
+
+  img.photo {
+    width: 100%;
+  }
+
+  img.photo:last-of-type {
+    margin-top: 6rem;
+    width: 70%;
+  }
+
+  div.btns {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 8rem;
+  }
+
+  button:first-of-type {
+    margin-bottom: 0;
+  }
+
+  body > div.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem;
+    width: 100%;
+  }
+
+  body > div.footer > div:first-of-type {
+    column-gap: 6rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10rem;
+    width: 30rem;
+  }
+
+  body > div.footer > div:first-of-type > p:last-child {
+    margin-left: -1.8rem;
+  }
+
+  body > div.footer img,
+  body > div.footer p,
+  body > div.footer > div:last-of-type {
+    margin: 0;
+    padding: 0;
+  }
+
+  body > div.footer > img {
+    width: 4rem;
+  }
+}
