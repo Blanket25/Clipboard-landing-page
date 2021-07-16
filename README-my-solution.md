@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Clipboard landing page](https://your-live-site-url.com)
+- Live Site URL: [Clipboard landing page](https://blanket25.github.io/Clipboard-landing-page/)
 
 ## My process
 
